@@ -13,11 +13,13 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds one of my favorite songs to the page.
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['Look - GOT7', 'Malibu - Jesse Baez', 'Phone Numbers - Dominic Fike', 
+      'RNP - YBN Cordae, Anderson .Paak', 'Ambiente - AQUIHAYAQUIHAY', 'WHATS POPPIN - Jack Harlow'
+      , 'Fangs - Matt Champion', 'Let Her Go - The Kid LAROI', 'Come Back to Earth -  Mac Miller', 'Cudi Zone - Kid Cudi'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];

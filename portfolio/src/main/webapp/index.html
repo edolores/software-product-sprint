@@ -2,16 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Erick Dolores' Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
+    <div id="header">
+      <h1>
+          Erick Dolores' Portfolio
+      </h1>
+    </div>
+    
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <p1>This is me.</p1>
+      <img id="erick-image" src="/images/IMG_0081.jpg"/>
+
+      <p2>
+          <br>
+          <br>
+          I'm Erick, a Los Angeles native, currently enrolled in my second year at Swarthmore College.
+          When I'm not studying CS, I like to play soccer, watch NBA games, and listen to music.
+      </p2>
+      <p3>
+          <br><br>Click here to get a random song I'm currently listening to:
+      </p3>
+      <button onclick="addRandomGreeting()" class="button">Random Song</button>
       <div id="greeting-container"></div>
     </div>
   </body>
