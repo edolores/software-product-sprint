@@ -29,24 +29,16 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
-async function getHello() {
-    // const response = await fetch('/data');
-    // const quote = await response.text();
-    // document.getElementById('quote-container').innerText = quote;
+function getHello() {
     fetch('/data')
     .then(response => response.json())
     .then((funFacts) => {
         const myStrings = document.getElementById('quote-container');
         myStrings.innerHTML = '';
-        console.log(funFacts[0]);
-        myStrings.appendChild(
-            createListElement('Basketball: ' + funFacts[0]));
-            console.log(funFacts[1]);
-        myStrings.appendChild(
-            createListElement('Color: ' + funFacts[1]));
-        console.log(funFacts[2]);
-        myStrings.appendChild(
-            createListElement('Food: ' + funFacts[2]));
+        funFacts.forEach((line) => {
+            console.log(line);
+            myStrings.appendChild(createListElement(line));
+        });
     });
 }
 
