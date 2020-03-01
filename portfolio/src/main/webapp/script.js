@@ -33,9 +33,12 @@ function getHello() {
     fetch('/data')
     .then(response => response.json())
     .then((funFacts) => {
+        const uname  = document.getElementById("username");
+        uname.innerText = funFacts.username;
+
         const myStrings = document.getElementById('quote-container');
         myStrings.innerHTML = '';
-        funFacts.forEach((line) => {
+        funFacts.comments.forEach((line) => {
             console.log(line);
             myStrings.appendChild(createListElement(line));
         });

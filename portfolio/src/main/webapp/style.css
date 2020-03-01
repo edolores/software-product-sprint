@@ -54,6 +54,11 @@ h1 {
     float: left;
 }
 
+#username {
+    font-weight: bold;
+    color: #e2a34b;
+}
+
 #greeting-button {
     padding-top: 10px;
 }
