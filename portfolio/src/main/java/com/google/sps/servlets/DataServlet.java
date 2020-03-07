@@ -32,6 +32,8 @@ import com.google.gson.Gson;
 @WebServlet("/data")
 public class DataServlet extends HttpServlet {
 
+  private String username = "";
+
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Query query = new Query("Comment").addSort("Timestamp", SortDirection.ASCENDING);
@@ -41,19 +43,52 @@ public class DataServlet extends HttpServlet {
 
     ArrayList<String> list = new ArrayList<String>();
     for(Entity entity: results.asIterable()){
-        String comment = (String) entity.getProperty("Content");
-        list.add(comment);
+        StringBuilder str = new StringBuilder();
+        String com = (String) entity.getProperty("Username");
+        if(com == null){
+            str.append("");
+        }
+        else{
+            str.append(com);
+            str.append(": ");
+        }
+        com = (String) entity.getProperty("Content");
+        str.append(com);
+        list.add(str.toString());
     }
 
     response.setContentType("application/json");
     Gson gson = new Gson();
-    String json = gson.toJson(list);
+    String comments = gson.toJson(list);
 
-    response.getWriter().println(json);
+    StringBuilder json = new StringBuilder();
+    json.append("{");
+    json.append("\"username\": ");
+    json.append("\"");
+    json.append(username);
+    json.append("\"");
+    json.append(", ");
+    json.append("\"comments\": ");
+    json.append(comments);
+    json.append("}");
+
+    response.getWriter().println(json.toString());
   }
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+    String nameInput = request.getParameter("name");
+
+    //if the username is different and isn't empty
+    if((nameInput != username) && (nameInput.length() != 0)){
+        username = nameInput;
+    }
+    else if((nameInput.length()) == 0 && (username.length() == 0)){
+      response.setContentType("text/html");
+      response.getWriter().println("Please enter a non-empty username");
+      return;
+    }
 
     // Get the input from the form.
     String input = request.getParameter("text-input");
@@ -69,6 +104,7 @@ public class DataServlet extends HttpServlet {
     long timestamp = System.currentTimeMillis();
 
     Entity comEntity = new Entity("Comment");
+    comEntity.setProperty("Username", username);
     comEntity.setProperty("Content", input);
     comEntity.setProperty("Timestamp", timestamp);
 

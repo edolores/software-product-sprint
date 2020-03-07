@@ -33,12 +33,12 @@ function getHello() {
     fetch('/data')
     .then(response => response.json())
     .then((funFacts) => {
-        if(funFacts.length != 3){
-            throw "Too few fun facts";
-        }
+        const uname  = document.getElementById('username');
+        uname.innerText = funFacts.username;
+
         const myStrings = document.getElementById('quote-container');
         myStrings.innerHTML = '';
-        funFacts.forEach((line) => {
+        funFacts.comments.forEach((line) => {
             console.log(line);
             myStrings.appendChild(createListElement(line));
         });
