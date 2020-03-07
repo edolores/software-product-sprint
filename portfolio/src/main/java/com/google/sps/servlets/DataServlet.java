@@ -26,11 +26,11 @@ import com.google.gson.Gson;
 @WebServlet("/data")
 public class DataServlet extends HttpServlet {
 
-  private final ArrayList<String> list = new ArrayList<String>();
+  private ArrayList<String> list = new ArrayList<String>();
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    fillList(list);
+    list = fillList();
     Gson gson = new Gson();
     String json = gson.toJson(list);
 
@@ -38,9 +38,11 @@ public class DataServlet extends HttpServlet {
     response.getWriter().println(json);
   }
 
-  public void fillList(ArrayList<String> list){
-      list.add("Go Lakers! ");
-      list.add("My favorite color is blue ");
-      list.add("I LOVE tacos");
+  public ArrayList<String> fillList(){
+      ArrayList<String> tempList = new ArrayList<String>();
+      tempList.add("Go Lakers! ");
+      tempList.add("My favorite color is blue ");
+      tempList.add("I LOVE tacos");
+      return tempList;
   }
 }
