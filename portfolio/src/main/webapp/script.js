@@ -33,7 +33,7 @@ function getHello() {
     fetch('/data')
     .then(response => response.json())
     .then((funFacts) => {
-        const uname  = document.getElementById("username");
+        const uname  = document.getElementById('username');
         uname.innerText = funFacts.username;
 
         const myStrings = document.getElementById('quote-container');
