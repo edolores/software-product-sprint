@@ -43,28 +43,35 @@ public class DataServlet extends HttpServlet {
 
     ArrayList<String> list = new ArrayList<String>();
     for(Entity entity: results.asIterable()){
+        StringBuilder str = new StringBuilder();
         String com = (String) entity.getProperty("Username");
         if(com == null){
-            com = "";
+            str.append("");
         }
         else{
-             com += ": ";
+            str.append(com);
+            str.append(": ");
         }
-        com += (String) entity.getProperty("Content");
-        list.add(com);
+        com = (String) entity.getProperty("Content");
+        str.append(com);
+        list.add(str.toString());
     }
 
     response.setContentType("application/json");
     Gson gson = new Gson();
     String comments = gson.toJson(list);
 
-    String json = "{";
-    json += "\"username\": ";
-    json += "\"" + username + "\"";
-    json += ", ";
-    json += "\"comments\": ";
-    json += comments;
-    json += "}";
+    StringBuilder json = new StringBuilder();
+    json.append("{");
+    json.append("\"username\": ");
+    json.append("\"");
+    json.append(username);
+    json.append("\"");
+    json.append(", ");
+    json.append("\"comments\": ");
+    json.append(comments);
+    json.append("}");
+    
     response.getWriter().println(json);
   }
 
