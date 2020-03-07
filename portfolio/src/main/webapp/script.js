@@ -30,7 +30,31 @@ function addRandomGreeting() {
 }
 
 async function getHello() {
-    const response = await fetch('/data');
-    const quote = await response.text();
-    document.getElementById('quote-container').innerText = quote;
+    // const response = await fetch('/data');
+    // const quote = await response.text();
+    // document.getElementById('quote-container').innerText = quote;
+    fetch('/data')
+    .then(response => response.json())
+    .then((funFacts) => {
+        if(funFacts.length != 3){
+            throw "Too few fun facts";
+        }
+        const myStrings = document.getElementById('quote-container');
+        myStrings.innerHTML = '';
+        console.log(funFacts[0]);
+        myStrings.appendChild(
+            createListElement('Basketball: ' + funFacts[0]));
+            console.log(funFacts[1]);
+        myStrings.appendChild(
+            createListElement('Color: ' + funFacts[1]));
+        console.log(funFacts[2]);
+        myStrings.appendChild(
+            createListElement('Food: ' + funFacts[2]));
+    });
+}
+
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
 }
