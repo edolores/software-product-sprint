@@ -61,14 +61,23 @@ public class DataServlet extends HttpServlet {
     Gson gson = new Gson();
     String comments = gson.toJson(list);
 
-    String json = "{";
-    json += "\"username\": ";
-    json += "\"" + username + "\"";
-    json += ", ";
-    json += "\"comments\": ";
-    json += comments;
-    json += "}";
-    response.getWriter().println(json);
+    StringBuilder json = new StringBuilder();
+    json.append("{");
+    json.append("\"username\": ");
+    json.append("\"");
+    json.append(username);
+    json.append("\"");
+    json.append(", ");
+    json.append("\"comments\": ");
+    json.append(comments);
+    json.append("}");
+    // json += "\"username\": ";
+    // json += "\"" + username + "\"";
+    // json += ", ";
+    // json += "\"comments\": ";
+    // json += comments;
+    // json += "}";
+    response.getWriter().println(json.toString());
   }
 
   @Override
