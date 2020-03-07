@@ -71,12 +71,7 @@ public class DataServlet extends HttpServlet {
     json.append("\"comments\": ");
     json.append(comments);
     json.append("}");
-    // json += "\"username\": ";
-    // json += "\"" + username + "\"";
-    // json += ", ";
-    // json += "\"comments\": ";
-    // json += comments;
-    // json += "}";
+
     response.getWriter().println(json.toString());
   }
 
