@@ -43,15 +43,18 @@ public class DataServlet extends HttpServlet {
 
     ArrayList<String> list = new ArrayList<String>();
     for(Entity entity: results.asIterable()){
+        StringBuilder str = new StringBuilder();
         String com = (String) entity.getProperty("Username");
         if(com == null){
-            com = "";
+            str.append("");
         }
         else{
-             com += ": ";
+            str.append(com);
+            str.append(": ");
         }
-        com += (String) entity.getProperty("Content");
-        list.add(com);
+        com = (String) entity.getProperty("Content");
+        str.append(com);
+        list.add(str.toString());
     }
 
     response.setContentType("application/json");
