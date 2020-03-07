@@ -33,6 +33,9 @@ function getHello() {
     fetch('/data')
     .then(response => response.json())
     .then((funFacts) => {
+        if(funFacts.length != 3){
+            throw "Too few fun facts";
+        }
         const myStrings = document.getElementById('quote-container');
         myStrings.innerHTML = '';
         funFacts.forEach((line) => {
