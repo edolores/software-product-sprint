@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="getHello()">
     <div id="header">
       <h1>
           Erick Dolores' Portfolio
@@ -30,11 +30,25 @@
     </div>
 
     <div id = "greeting">
-        <h2>Get a Greeting</h2>
-        <p>Click here to get a greeting from me!</p>
+
+        <!-- <p>Click here to get a greeting from me!</p>
         <button id = "greeting-button" onclick = "getHello()" class = "button">Fetch a greeting!</button>
-        <br><br>
+        <br><br> -->
+
+        <form action="/data" method="POST">
+      
+        <br/><br/>
+        <h2>Leave a Comment</h2>
+        <p>Input:</p>
+        <textarea name="text-input">Leave your comment here!</textarea>
+
+        <br/><br/>
+        <input type="submit" class = "button"/>
+
+        <br/><br/>
         <div id = "quote-container"></div>
+        <ul id="history"></ul>
+        </form>
     </div>
   </body>
 </html>

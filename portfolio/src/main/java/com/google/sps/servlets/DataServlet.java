@@ -30,19 +30,29 @@ public class DataServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    list = fillList();
+    response.setContentType("application/json");
     Gson gson = new Gson();
     String json = gson.toJson(list);
 
-    response.setContentType("application/json");
     response.getWriter().println(json);
   }
 
-  public ArrayList<String> fillList(){
-      ArrayList<String> tempList = new ArrayList<String>();
-      tempList.add("Go Lakers! ");
-      tempList.add("My favorite color is blue ");
-      tempList.add("I LOVE tacos");
-      return tempList;
+  @Override
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+    // Get the input from the form.
+    String input = request.getParameter("text-input");
+
+    //if input is empty ask them to enter again
+    if (input.length() == 0) {
+      response.setContentType("text/html");
+      response.getWriter().println("Please enter a valid string");
+      return;
+    }
+
+    list.add(input);
+
+    // Redirect back to the HTML page.
+    response.sendRedirect("/index.html");
   }
 }
