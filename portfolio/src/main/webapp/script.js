@@ -65,6 +65,7 @@ function createMap1(){
     var map = new google.maps.Map(document.getElementById('map1'), {
     center: roscoes,
     zoom: 8,
+    gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -153,6 +154,7 @@ function createMap2(){
     var map = new google.maps.Map(document.getElementById('map2'), {
     center: ohdessert,
     zoom: 8,
+    gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -241,6 +243,7 @@ function createMap3(){
     var map = new google.maps.Map(document.getElementById('map3'), {
     center: greenEggs,
     zoom: 8,
+    gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -329,6 +332,7 @@ function createMap4(){
     var map = new google.maps.Map(document.getElementById('map4'), {
     center: birrieria,
     zoom: 8,
+    gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -417,6 +421,7 @@ function createMap5(){
     var map = new google.maps.Map(document.getElementById('map5'), {
     center: nandos,
     zoom: 8,
+    gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -505,6 +510,7 @@ function createMap6(){
     var map = new google.maps.Map(document.getElementById('map6'), {
     center: misoya,
     zoom: 8,
+    gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
