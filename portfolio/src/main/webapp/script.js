@@ -100,6 +100,8 @@ function initMap() {
               stylers: [{color: '#17263c'}]
             }]
     });
+    var syd = {lat: -34.397, lng: 150.644};
+    var marker = new google.maps.Marker({position: syd, map: map});
 }
 
 function addRandomGreeting() {
