@@ -64,7 +64,7 @@ function createMap1(){
     var roscoes = {lat: 34.047520, lng: -118.346210};
     var map = new google.maps.Map(document.getElementById('map1'), {
     center: roscoes,
-    zoom: 8,
+    zoom: 12,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -153,7 +153,7 @@ function createMap2(){
     var ohdessert = {lat: 37.763560, lng: -122.479070};
     var map = new google.maps.Map(document.getElementById('map2'), {
     center: ohdessert,
-    zoom: 8,
+    zoom: 12,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -242,7 +242,7 @@ function createMap3(){
     var greenEggs = {lat: 39.948320, lng: -75.162320};
     var map = new google.maps.Map(document.getElementById('map3'), {
     center: greenEggs,
-    zoom: 8,
+    zoom: 12,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -331,7 +331,7 @@ function createMap4(){
     var birrieria = {lat: 34.176430, lng: -118.381660};
     var map = new google.maps.Map(document.getElementById('map4'), {
     center: birrieria,
-    zoom: 8,
+    zoom: 12,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -420,7 +420,7 @@ function createMap5(){
     var nandos = {lat: 38.906147, lng: -77.0419462};
     var map = new google.maps.Map(document.getElementById('map5'), {
     center: nandos,
-    zoom: 8,
+    zoom: 12,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -509,7 +509,7 @@ function createMap6(){
     var misoya = {lat: 40.72845, lng: -73.987993};
     var map = new google.maps.Map(document.getElementById('map6'), {
     center: misoya,
-    zoom: 8,
+    zoom: 12,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
