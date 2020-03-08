@@ -714,7 +714,7 @@ function createMap6(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h6 id="firstHeading" class="firstHeading"><b>Ave 26 Taco Stand</b></h6>'+
+      '<h6 id="firstHeading" class="firstHeading"><b>Misoya</b></h6>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
@@ -732,7 +732,7 @@ function createMap6(){
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
-    var marker = new google.maps.Marker({position: misoya, map: map, title: 'Ave 26 Taco Stand'});
+    var marker = new google.maps.Marker({position: misoya, map: map, title: 'Misoya'});
     marker.addListener('mouseover', function(){
         infoWindow.open(map, marker);
     });
