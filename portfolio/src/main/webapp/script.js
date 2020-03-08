@@ -157,9 +157,7 @@ function createMap1(){
       'and the combination of winning the game and the food '+
       'created an amazing experience. If you\'re ever in Los '+
       'Angeles, you need to eat here. It\'s a must.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Last visited January 10, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -267,9 +265,7 @@ function createMap2(){
       'for hours with my friends. '+
       'The only downside is my car got broken into while '+
       'I was eating here :/.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Last visited August 16, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -376,9 +372,7 @@ function createMap3(){
       'gluttonous dishes. I loved visiting this place and '+
       'come back every couple of weeks for breakfast. '+
       'Their red velvet pancakes are a major recommendation from me.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Last visited September 25, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -483,9 +477,7 @@ function createMap4(){
       'tacos are JUICY. These types of tacos are fried until golden brown and '+
       'are eaten with a soup that\'s meant for dipping. My mouth is watering '+
       'as I write this. Los Angeles tacos remain undefeated.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Last visited January 7, 2020.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -591,9 +583,7 @@ function createMap5(){
       'I\'m not kidding when I say that this chicken is to die for.  '+
       'The sauces they use are unbelievable and I wanted more as soon as I left '+
       'the restaurant. I can\'t wait for the next time I can come back to D.C.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Last visited March 10, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -700,9 +690,7 @@ function createMap6(){
       'before. So, naturally, we took an excursion from Central Park '+
       'to Misoya, a place my friend had been to before. '+
       'To this day, Misoya is one of my favorite ramen restaurants.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Last visited October 15, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
