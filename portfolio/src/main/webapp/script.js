@@ -64,7 +64,7 @@ function createMap1(){
     var roscoes = {lat: 34.047520, lng: -118.346210};
     var map = new google.maps.Map(document.getElementById('map1'), {
     center: roscoes,
-    zoom: 12,
+    zoom: 13,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -146,14 +146,38 @@ function createMap1(){
               stylers: [{color: '#17263c'}]
             }]
     });
-    var marker = new google.maps.Marker({position: roscoes, map: map});
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h11 id="firstHeading" class="firstHeading">Uluru</h11>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+    var infoWindow = new google.maps.InfoWindow({content: contentString});
+    var marker = new google.maps.Marker({position: roscoes, map: map, title: 'Roscoe\'s Chicken and Waffles'});
+    marker.addListener('mouseover', function(){
+        infoWindow.open(map, marker);
+    });
 }
 
 function createMap2(){
     var ohdessert = {lat: 37.763560, lng: -122.479070};
     var map = new google.maps.Map(document.getElementById('map2'), {
     center: ohdessert,
-    zoom: 12,
+    zoom: 13,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -235,14 +259,38 @@ function createMap2(){
               stylers: [{color: '#17263c'}]
             }]
     });
-    var marker = new google.maps.Marker({position: ohdessert, map: map});
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h10 id="firstHeading" class="firstHeading">Uluru</h10>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+    var infoWindow = new google.maps.InfoWindow({content: contentString});
+    var marker = new google.maps.Marker({position: ohdessert, map: map, title: 'OH Dessert Cafe'});
+    marker.addListener('mouseover', function(){
+        infoWindow.open(map, marker);
+    });
 }
 
 function createMap3(){
     var greenEggs = {lat: 39.948320, lng: -75.162320};
     var map = new google.maps.Map(document.getElementById('map3'), {
     center: greenEggs,
-    zoom: 12,
+    zoom: 13,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -324,14 +372,38 @@ function createMap3(){
               stylers: [{color: '#17263c'}]
             }]
     });
-    var marker = new google.maps.Marker({position: greenEggs, map: map});
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h9 id="firstHeading" class="firstHeading">Uluru</h9>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+    var infoWindow = new google.maps.InfoWindow({content: contentString});
+    var marker = new google.maps.Marker({position: greenEggs, map: map, title: 'Green Eggs Cafe'});
+    marker.addListener('mouseover', function(){
+        infoWindow.open(map, marker);
+    });
 }
 
 function createMap4(){
     var birrieria = {lat: 34.176430, lng: -118.381660};
     var map = new google.maps.Map(document.getElementById('map4'), {
     center: birrieria,
-    zoom: 12,
+    zoom: 13,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -413,14 +485,38 @@ function createMap4(){
               stylers: [{color: '#17263c'}]
             }]
     });
-    var marker = new google.maps.Marker({position: birrieria, map: map});
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h8 id="firstHeading" class="firstHeading">Uluru</h8>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+    var infoWindow = new google.maps.InfoWindow({content: contentString});
+    var marker = new google.maps.Marker({position: birrieria, map: map, title: 'Birrieria San Marcos'});
+    marker.addListener('mouseover', function(){
+        infoWindow.open(map, marker);
+    });
 }
 
 function createMap5(){
     var nandos = {lat: 38.906147, lng: -77.0419462};
     var map = new google.maps.Map(document.getElementById('map5'), {
     center: nandos,
-    zoom: 12,
+    zoom: 13,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -502,14 +598,38 @@ function createMap5(){
               stylers: [{color: '#17263c'}]
             }]
     });
-    var marker = new google.maps.Marker({position: nandos, map: map});
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h7 id="firstHeading" class="firstHeading">Uluru</h7>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+    var infoWindow = new google.maps.InfoWindow({content: contentString});
+    var marker = new google.maps.Marker({position: nandos, map: map, title: 'Nando\'s Peri-Peri'});
+    marker.addListener('mouseover', function(){
+        infoWindow.open(map, marker);
+    });
 }
 
 function createMap6(){
     var misoya = {lat: 40.72845, lng: -73.987993};
     var map = new google.maps.Map(document.getElementById('map6'), {
     center: misoya,
-    zoom: 12,
+    zoom: 13,
     gestureHandling: 'greedy',
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -591,5 +711,29 @@ function createMap6(){
               stylers: [{color: '#17263c'}]
             }]
     });
-    var marker = new google.maps.Marker({position: misoya, map: map});
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h6 id="firstHeading" class="firstHeading">Uluru</h6>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+    var infoWindow = new google.maps.InfoWindow({content: contentString});
+    var marker = new google.maps.Marker({position: misoya, map: map, title: 'Ave 26 Taco Stand'});
+    marker.addListener('mouseover', function(){
+        infoWindow.open(map, marker);
+    });
 }
