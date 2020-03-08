@@ -149,7 +149,7 @@ function createMap1(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h11 id="firstHeading" class="firstHeading">Uluru</h11>'+
+      '<h11 id="firstHeading" class="firstHeading"><b>Roscoe\'s Chicken and Waffles</b></h11>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
@@ -262,7 +262,7 @@ function createMap2(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h10 id="firstHeading" class="firstHeading">Uluru</h10>'+
+      '<h10 id="firstHeading" class="firstHeading"><b>OH Dessert Cafe</b></h10>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
@@ -375,7 +375,7 @@ function createMap3(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h9 id="firstHeading" class="firstHeading">Uluru</h9>'+
+      '<h9 id="firstHeading" class="firstHeading"><b>Green Eggs Cafe</b></h9>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
@@ -488,7 +488,7 @@ function createMap4(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h8 id="firstHeading" class="firstHeading">Uluru</h8>'+
+      '<h8 id="firstHeading" class="firstHeading"><b>Birrieria San Marcos</b></h8>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
@@ -601,7 +601,7 @@ function createMap5(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h7 id="firstHeading" class="firstHeading">Uluru</h7>'+
+      '<h7 id="firstHeading" class="firstHeading"><b>Nando\'s Peri-Peri</b></h7>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
@@ -714,7 +714,7 @@ function createMap6(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h6 id="firstHeading" class="firstHeading">Uluru</h6>'+
+      '<h6 id="firstHeading" class="firstHeading"><b>Ave 26 Taco Stand</b></h6>'+
       '<div id="bodyContent">'+
       '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
       'sandstone rock formation in the southern part of the '+
