@@ -45,10 +45,7 @@ public class DataServlet extends HttpServlet {
     for(Entity entity: results.asIterable()){
         StringBuilder str = new StringBuilder();
         String com = (String) entity.getProperty("Username");
-        if(com == null){
-            str.append("");
-        }
-        else{
+        if(com != null){
             str.append(com);
             str.append(": ");
         }
@@ -71,8 +68,8 @@ public class DataServlet extends HttpServlet {
     json.append("\"comments\": ");
     json.append(comments);
     json.append("}");
-
-    response.getWriter().println(json.toString());
+    
+    response.getWriter().println(json);
   }
 
   @Override

@@ -15,6 +15,14 @@
 /**
  * Adds one of my favorite songs to the page.
  */
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+    });
+}
+
 function addRandomGreeting() {
   const greetings =
       ['Look - GOT7', 'Malibu - Jesse Baez', 'Phone Numbers - Dominic Fike', 

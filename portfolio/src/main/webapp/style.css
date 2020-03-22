@@ -8,11 +8,11 @@
 #header {
   border-radius: 15px;
   background: #2b425e;
-  padding: 20px; 
+  /* padding: 20px;  */
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  height: 40px;
+  height: 100px;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000; 
 }
@@ -20,6 +20,8 @@
 /*Formatting for header text*/
 h1 {
     text-align: center;
+    vertical-align: middle;
+    line-height: 100px;   
     color: white;
     font: verdana;
     font-family: "Verdana", Verdana, Geneva, Tahoma, sans-serif;
@@ -29,10 +31,10 @@ h1 {
 #greeting {
   border-radius: 15px;
   background: #2b425e;
-  padding-top: 20px;
-  padding-bottom: 20px; 
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   width: 60%;
   height: 1000px; 
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
@@ -71,6 +73,7 @@ h1 {
   padding-bottom: 20px; 
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   width: 60%;
   height: 500px; 
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
@@ -94,18 +97,39 @@ h1 {
     border: none;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     width: 1100px;
     padding-bottom: 20px; 
     margin-top: 20px;
 }
 
+#map {
+  border-radius: 15px;
+  background: #2b425e;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 1000px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+      
+/* Optional: Makes the sample page fill the window. */
+/* html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
 /*Default div formatting*/
-div {
+/* div {
   width: 300px;
   border: 15px solid #2b425e;
   padding: 20px;
   margin: 20px;
-}
+} */
 
 /*Class to describe buttons*/
 .button {
