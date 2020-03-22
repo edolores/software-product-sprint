@@ -66,7 +66,7 @@ h1 {
 }
 
 /*Formatting for main intro paragraph*/
-#content {
+#intro {
   border-radius: 15px;
   background: #2b425e;
   padding-top: 100px;
@@ -103,33 +103,42 @@ h1 {
     margin-top: 20px;
 }
 
-#map {
+.map {
   border-radius: 15px;
-  background: #2b425e;
   padding-top: 20px;
   padding-bottom: 20px; 
   margin-left: auto;
+  margin-bottom: 30px;
   margin-right: auto;
-  width: 80%;
-  height: 1000px;
+  width: 70%;
+  height: 700px;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
 }
       
-/* Optional: Makes the sample page fill the window. */
-/* html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-} */
+#food-header {
+  border-radius: 15px;
+  background: #2b425e;
+  /* padding: 20px;  */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 80%;
+  height: 100px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000; 
+}
 
-/*Default div formatting*/
-/* div {
-  width: 300px;
-  border: 15px solid #2b425e;
-  padding: 20px;
-  margin: 20px;
-} */
+/*Formatting for header text*/
+h4 {
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;   
+    color: white;
+    font: verdana;
+    font-family: "Verdana", Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /*Class to describe buttons*/
 .button {
