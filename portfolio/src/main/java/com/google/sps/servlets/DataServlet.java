@@ -45,10 +45,7 @@ public class DataServlet extends HttpServlet {
     for(Entity entity: results.asIterable()){
         StringBuilder str = new StringBuilder();
         String com = (String) entity.getProperty("Username");
-        if(com == null){
-            str.append("");
-        }
-        else{
+        if(com != null){
             str.append(com);
             str.append(": ");
         }
