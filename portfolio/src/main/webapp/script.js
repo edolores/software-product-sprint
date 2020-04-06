@@ -16,12 +16,12 @@
  * Adds one of my favorite songs to the page.
  */
 function initMap() {
-    createMap1();
-    createMap2();
-    createMap3();
-    createMap4();
-    createMap5();
-    createMap6();
+    createRoscoesMap();
+    createOhMap();
+    createGreenEggsMap();
+    createBirrieriaMap();
+    createNandosMap();
+    createMisoyaMap();
 }
 
 function addRandomGreeting() {
@@ -60,8 +60,9 @@ function createListElement(text) {
   return liElement;
 }
 
-function createMap1(){
+function createRoscoesMap(){
     var roscoes = {lat: 34.047520, lng: -118.346210};
+
     var map = new google.maps.Map(document.getElementById('map1'), {
     center: roscoes,
     zoom: 13,
@@ -167,8 +168,9 @@ function createMap1(){
     });
 }
 
-function createMap2(){
+function createOhMap(){
     var ohdessert = {lat: 37.763560, lng: -122.479070};
+
     var map = new google.maps.Map(document.getElementById('map2'), {
     center: ohdessert,
     zoom: 13,
@@ -273,10 +275,12 @@ function createMap2(){
     marker.addListener('mouseover', function(){
         infoWindow.open(map, marker);
     });
+
 }
 
-function createMap3(){
+function createGreenEggsMap(){
     var greenEggs = {lat: 39.948320, lng: -75.162320};
+
     var map = new google.maps.Map(document.getElementById('map3'), {
     center: greenEggs,
     zoom: 13,
@@ -382,8 +386,9 @@ function createMap3(){
     });
 }
 
-function createMap4(){
+function createBirrieriaMap(){
     var birrieria = {lat: 34.176430, lng: -118.381660};
+
     var map = new google.maps.Map(document.getElementById('map4'), {
     center: birrieria,
     zoom: 13,
@@ -487,8 +492,9 @@ function createMap4(){
     });
 }
 
-function createMap5(){
+function createNandosMap(){
     var nandos = {lat: 38.906147, lng: -77.0419462};
+
     var map = new google.maps.Map(document.getElementById('map5'), {
     center: nandos,
     zoom: 13,
@@ -593,8 +599,9 @@ function createMap5(){
     });
 }
 
-function createMap6(){
+function createMisoyaMap(){
     var misoya = {lat: 40.72845, lng: -73.987993};
+
     var map = new google.maps.Map(document.getElementById('map6'), {
     center: misoya,
     zoom: 13,
@@ -678,6 +685,7 @@ function createMap6(){
               elementType: 'labels.text.stroke',
               stylers: [{color: '#17263c'}]
             }]
+
     });
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
