@@ -149,21 +149,15 @@ function createMap1(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h11 id="firstHeading" class="firstHeading">Uluru</h11>'+
+      '<h11 id="firstHeading" class="firstHeading"><b>Roscoe\'s Chicken and Waffles</b></h11>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Roscoe\'s is a HUGE win for Los Angeles. The chicken and waffles are ' +
+      'on another plane of existence. My first bite had me '+
+      'in jaw-dropping shock. I first came here after a Lakers game '+
+      'and the combination of winning the game and the food '+
+      'created an amazing experience. If you\'re ever in Los '+
+      'Angeles, you need to eat here. It\'s a must.</p>'+
+      '<p>Last visited January 10, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -262,21 +256,16 @@ function createMap2(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h10 id="firstHeading" class="firstHeading">Uluru</h10>'+
+      '<h10 id="firstHeading" class="firstHeading"><b>OH Dessert Cafe</b></h10>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>I have mixed emotions about this place. The dessert is AMAZING ' +
+      'and they have really good boba. There\'s also a ton of '+
+      'variety in the menu, which is a plus. '+
+      'The atmosphere made me want to stay there '+
+      'for hours with my friends. '+
+      'The only downside is my car got broken into while '+
+      'I was eating here :/.</p>'+
+      '<p>Last visited August 16, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -375,21 +364,15 @@ function createMap3(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h9 id="firstHeading" class="firstHeading">Uluru</h9>'+
+      '<h9 id="firstHeading" class="firstHeading"><b>Green Eggs Cafe</b></h9>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>This is one of the first restaurants I ever visited in Philly. ' +
+      'The portions are fair and give HUGE portions. '+
+      'They do not hold back when making their large and '+
+      'gluttonous dishes. I loved visiting this place and '+
+      'come back every couple of weeks for breakfast. '+
+      'Their red velvet pancakes are a major recommendation from me.</p>'+
+      '<p>Last visited September 25, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -488,21 +471,13 @@ function createMap4(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h8 id="firstHeading" class="firstHeading">Uluru</h8>'+
+      '<h8 id="firstHeading" class="firstHeading"><b>Birrieria San Marcos</b></h8>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>I can\'t hype this place up enough. Let me just say that these ' +
+      'tacos are JUICY. These types of tacos are fried until golden brown and '+
+      'are eaten with a soup that\'s meant for dipping. My mouth is watering '+
+      'as I write this. Los Angeles tacos remain undefeated.</p>'+
+      '<p>Last visited January 7, 2020.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -601,21 +576,14 @@ function createMap5(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h7 id="firstHeading" class="firstHeading">Uluru</h7>'+
+      '<h7 id="firstHeading" class="firstHeading"><b>Nando\'s Peri-Peri</b></h7>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Nando\'s is an Afro-Portuguese restaurant that has ' +
+      'the absolute best chicken I\'ve had in my life. '+
+      'I\'m not kidding when I say that this chicken is to die for.  '+
+      'The sauces they use are unbelievable and I wanted more as soon as I left '+
+      'the restaurant. I can\'t wait for the next time I can come back to D.C.</p>'+
+      '<p>Last visited March 10, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
@@ -714,25 +682,19 @@ function createMap6(){
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h6 id="firstHeading" class="firstHeading">Uluru</h6>'+
+      '<h7 id="firstHeading" class="firstHeading"><b>Misoya</b></h7>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<p>Misoya is the first ramen restaurant ' +
+      'I\'ve ever visited. I came to New York on a vacation '+
+      'trip with my friends and they\'d learned that I\'d never had ramen '+
+      'before. So, naturally, we took an excursion from Central Park '+
+      'to Misoya, a place my friend had been to before. '+
+      'To this day, Misoya is one of my favorite ramen restaurants.</p>'+
+      '<p>Last visited October 15, 2019.</p>'+
       '</div>'+
       '</div>';
     var infoWindow = new google.maps.InfoWindow({content: contentString});
-    var marker = new google.maps.Marker({position: misoya, map: map, title: 'Ave 26 Taco Stand'});
+    var marker = new google.maps.Marker({position: misoya, map: map, title: 'Misoya'});
     marker.addListener('mouseover', function(){
         infoWindow.open(map, marker);
     });
