@@ -42,7 +42,7 @@ public final class GreeterTest {
   }
 
   @Test
-  public void testGreetingRmoveSymbols() {
+  public void testGreetingRemoveSymbols() {
     Greeter greeter = new Greeter();
 
     String greeting = greeter.greet(" ^&@*  A@^&@da @*&  ");
