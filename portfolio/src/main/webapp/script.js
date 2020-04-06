@@ -63,6 +63,7 @@ function createListElement(text) {
 function createRoscoesMap(){
     var roscoes = {lat: 34.047520, lng: -118.346210};
     var map = new google.maps.Map(document.getElementById('roscoesMap'), createMap(roscoes));
+  
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -87,6 +88,7 @@ function createRoscoesMap(){
 function createOhMap(){
     var ohdessert = {lat: 37.763560, lng: -122.479070};
     var map = new google.maps.Map(document.getElementById('ohMap'), createMap(ohdessert));
+  
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -107,11 +109,13 @@ function createOhMap(){
     marker.addListener('mouseover', function(){
         infoWindow.open(map, marker);
     });
+
 }
 
 function createGreenEggsMap(){
     var greenEggs = {lat: 39.948320, lng: -75.162320};
     var map = new google.maps.Map(document.getElementById('greenEggsMap'), createMap(greenEggs));
+
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -136,6 +140,7 @@ function createGreenEggsMap(){
 function createBirrieriaMap(){
     var birrieria = {lat: 34.176430, lng: -118.381660};
     var map = new google.maps.Map(document.getElementById('birrieriaMap'), createMap(birrieria));
+
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -158,6 +163,7 @@ function createBirrieriaMap(){
 function createNandosMap(){
     var nandos = {lat: 38.906147, lng: -77.0419462};
     var map = new google.maps.Map(document.getElementById('nandosMap'), createMap(nandos));
+
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
@@ -181,6 +187,7 @@ function createNandosMap(){
 function createMisoyaMap(){
     var misoya = {lat: 40.72845, lng: -73.987993};
     var map = new google.maps.Map(document.getElementById('misoyaMap'), createMap(misoya));
+  
     var contentString = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
